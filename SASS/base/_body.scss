@@ -1,0 +1,17 @@
+body{
+    //background
+    background-image:url("../ASSETS/lines-pattern-black-background.avif");
+
+    &::-webkit-scrollbar{
+        width: 15px;
+        background: black;
+    }
+    &::-webkit-scrollbar-thumb{
+
+        background-color: rgb(109, 78, 194);
+        border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(183, 199, 38);
+    }
+}

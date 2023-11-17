@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../ASSETS/lines-pattern-black-background.avif");
+}
+body::-webkit-scrollbar {
+  width: 15px;
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(109, 78, 194);
+  border-radius: 1rem;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(183, 199, 38);
+}
+
+.panel_header {
+  position: sticky;
+  height: 5.5rem;
+  padding: 0.8rem 1rem;
+  top: 0rem;
+  background-image: linear-gradient(to bottom, rgb(60, 60, 60), rgb(109, 78, 194));
+  z-index: 5;
+}
+.panel_header a {
+  height: 40px;
+  width: 40px;
+}
+.panel_header a picture .company_logo {
+  position: fixed;
+  top: 0.2rem;
+  left: 1rem;
+  z-index: 2;
+}
+.panel_header a picture .shopCart_logo {
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
+}
+.panel_header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: gold;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 4px black;
+}
+.panel_header .menu_header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -10px;
+  border-radius: 15px;
+}
+.panel_header .menu_header li {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  text-align: center;
+  list-style-type: none;
+  border-radius: 15px;
+}
+.panel_header .menu_header li a {
+  margin: 0.5rem;
+  color: gold;
+  text-decoration-line: none;
+}
+.panel_header .menu_header li:hover {
+  transition: 1s;
+  transform: translateY(-1rem);
+}
+
+footer {
+  background-image: radial-gradient(ellipse 100rem 100rem, rgb(109, 78, 194), black);
+  position: relative;
+  bottom: 2rem;
+  margin-top: 50px;
+}
+footer .panel_footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5rem 0.5rem;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  top: -0.5rem;
+  color: rgb(183, 199, 38);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 1px 4px black;
+}
+footer .panel_footer h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: -5rem;
+  position: relative;
+  bottom: -4.5rem;
+}
+footer .panel_footer .social_media {
+  padding-top: 0.3rem;
+  position: relative;
+  bottom: 1rem;
+}
+footer .panel_footer .social_media .social_media_link {
+  margin: 0.5rem;
+  color: gold;
+  text-decoration-line: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration-line: none;
+}
+
+.panel_shopCart {
+  background-image: radial-gradient(ellipse 80rem 50rem, rgb(109, 78, 194), black);
+  box-shadow: 0px 0px 4px 4px #7ccf17;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  margin: 5rem 0rem 10rem 26rem;
+  margin-bottom: 10rem;
+  border-radius: 12px;
+  border: solid 2px #7ccf17;
+}
+.panel_shopCart h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: gold;
+  text-shadow: 0px 0px 10px 7px black;
+  border-radius: 12px;
+  height: 15px;
+}
+.panel_shopCart .content_shopCart {
+  background-image: linear-gradient(to bottom, #7ccf17, #334d14);
+  width: 30rem;
+  height: 10rem;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px 2px black;
+  border-radius: 12px;
+  border: solid 2px rgb(34, 17, 81);
+}
+.panel_shopCart .content_shopCart p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 0px 4px 2px black;
+  border-radius: 12px;
+  border: solid 2px rgb(109, 78, 194);
+}
+
+span {
+  color: rgb(183, 199, 38);
+  text-shadow: 0px 0px 1px 1px black;
+  font-weight: bold;
+}
+
+.frame_video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+.frame_video iframe {
+  border-radius: 15px;
+}
+
+.frame_mapa {
+  margin: 5rem;
+}
+
+.box_sConsulta {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 5rem 10rem 0rem;
+}
+.box_sConsulta .panel_sConsulta {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  height: 20rem;
+  width: 40rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: rgb(183, 199, 38);
+  box-shadow: 0px 4px 4px rgb(109, 78, 194);
+}
+.box_sConsulta .panel_sConsulta form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.labelScoment {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: black;
+  text-shadow: 0px 1px 2px black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+input {
+  background-color: black;
+  color: rgb(109, 78, 194);
+}
+input:hover {
+  color: rgb(183, 199, 38);
+  background-color: rgb(109, 78, 194);
+}
+
+#localSite {
+  background-color: black;
+  color: rgb(109, 78, 194);
+  border-radius: 10px;
+  width: 6rem;
+}
+#localSite option {
+  background-color: black;
+  color: rgb(109, 78, 194);
+}
+#localSite option:hover {
+  color: rgb(183, 199, 38) !important;
+  background-color: rgb(109, 78, 194) !important;
+}
+#localSite:hover {
+  color: rgb(183, 199, 38);
+  background-color: rgb(109, 78, 194);
+}
+
+.frame_img_meca img {
+  border: solid 6px rgb(109, 78, 194);
+  border-radius: 12px;
+}
+
+.brands_asoc {
+  padding-top: 5rem;
+  height: 50px;
+  width: 100%;
+}
+.brands_asoc .lista_marcas {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sign_txt {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(183, 199, 38);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 1px 4px black;
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5rem;
+  background-image: radial-gradient(ellipse 400px 100px, rgb(109, 78, 194), black);
+  border: solid 5px rgb(109, 78, 194);
+  border-radius: 15px;
+}
+
+.historyComp {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+.historyComp img {
+  width: 400px;
+  height: 200px;
+  margin: 40px;
+  border: solid 10px rgb(183, 199, 38);
+}
+.historyComp .lorem_historyComp {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0px 20px 100px 20px;
+}
+
+.exhibitor {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 250px);
+  grid-template-areas: "helmet bike bike" "cloth biketwo biketwo" "panoram panoram panoram";
+  gap: 15px;
+}
+.exhibitor .item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border: solid 4px rgb(183, 199, 38);
+  border-radius: 12px;
+}
+.exhibitor .helmet {
+  grid-area: helmet;
+  border: solid 4px rgb(109, 78, 194);
+}
+.exhibitor .cloth {
+  grid-area: cloth;
+}
+.exhibitor .bike {
+  grid-area: bike;
+  background-color: rgb(109, 78, 194);
+}
+.exhibitor .biketwo {
+  grid-area: biketwo;
+  background-color: rgb(183, 199, 38);
+  border: solid 4px rgb(109, 78, 194);
+}
+.exhibitor .biketwo img {
+  position: relative;
+  top: -0.5rem;
+}
+.exhibitor .panoram {
+  grid-area: panoram;
+}
+.exhibitor .panoram img {
+  border-radius: 12px;
+}
+
+.grid_shop {
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas: "cardone cardtwo cardtre" "cardfour cardfive cardsix";
+  gap: 10px;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.grid_shop .shop_item {
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  border: solid 4px rgb(183, 199, 38);
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-content: end;
+}
+.grid_shop .shop_item img {
+  position: relative;
+  top: -2rem;
+}
+.grid_shop .shop_item h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(109, 78, 194);
+  color: black;
+  text-shadow: 0px 1px 2px black;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(183, 199, 38) !important;
+  text-align: center;
+  height: 3rem;
+  width: 450px;
+  text-align: center;
+}
+.grid_shop .shop_item h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(183, 199, 38);
+  color: black;
+  text-shadow: 0px 1px 2px black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  height: 2rem;
+  width: 450px;
+  text-align: center;
+}
+.grid_shop .shop_item .but_item {
+  background-color: rgb(109, 78, 194);
+  width: 450px;
+  height: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 12px;
+  color: gold !important;
+  color: black;
+  text-shadow: 0px 1px 2px black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+.grid_shop .shop_item .but_item:hover {
+  color: black;
+  background-color: rgb(183, 199, 38);
+  transition: 1s;
+}
+.grid_shop .cardone {
+  grid-area: cardone;
+}
+.grid_shop .cardtwo {
+  grid-area: cardtwo;
+}
+.grid_shop .cardtre {
+  grid-area: cardtre;
+}
+.grid_shop .cardfour {
+  grid-area: cardfour;
+}
+.grid_shop .cardfour img {
+  margin-bottom: -4rem;
+}
+.grid_shop .cardfive {
+  grid-area: cardfive;
+}
+.grid_shop .cardsix {
+  grid-area: cardsix;
+}
+.grid_shop .cardsix img {
+  margin-left: -1rem;
+}
+
+#carouselExampleAutoplaying .carousel-inner {
+  height: 30rem !important;
+  z-index: -1;
+}
+#carouselExampleAutoplaying .carousel-inner img {
+  height: 30rem !important;
+}
+#carouselExampleAutoplaying button {
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header nav .panel_header .company_logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .shopCart_logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .menu_header li a {
+    font-size: 0.8rem;
+  }
+  .brands_asoc .lista_marcas img {
+    height: 20px;
+    width: 200px;
+  }
+  .brands_asoc .lista_marcas .scott_flayer {
+    width: 80px;
+    height: 30px;
+  }
+  #carouselExampleAutoplaying {
+    margin-bottom: 5rem;
+    height: 200px;
+  }
+  #carouselExampleAutoplaying .carousel-inner {
+    height: 200px !important;
+    z-index: -1;
+  }
+  #carouselExampleAutoplaying .carousel-inner img {
+    height: 200px !important;
+  }
+  .frame_video {
+    width: 100%;
+    height: 15rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+  .frame_video iframe {
+    width: 80%;
+  }
+  .sign_txt {
+    font-size: 0.8rem;
+    margin: 80px 0px 80px 0px;
+  }
+  .exhibitor {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+  }
+  footer .panel_footer {
+    font-size: 1.2rem;
+  }
+  footer .panel_footer h6 {
+    margin-bottom: 1rem;
+  }
+  footer .panel_footer .social_media a img {
+    width: 30px;
+    height: 30px;
+  }
+  .grid_shop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .grid_shop .shop_item {
+    width: 300px;
+    height: 300px;
+  }
+  .grid_shop .shop_item img {
+    width: 70%;
+    height: 50%;
+  }
+  .grid_shop .cardtwo img {
+    width: 50%;
+  }
+  .grid_shop .cardfour {
+    grid-area: cardfour;
+  }
+  .grid_shop .cardfour img {
+    margin-bottom: 0rem;
+  }
+  .box_sConsulta {
+    flex-direction: column-reverse !important;
+    justify-content: space-evenly;
+    align-content: normal;
+    margin-top: 200px;
+    margin-bottom: 250px;
+  }
+  .box_sConsulta .panel_sConsulta {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .box_sConsulta .panel_sConsulta #comentsService {
+    width: 19rem;
+  }
+  .box_shopCart {
+    flex-direction: column;
+  }
+  .box_shopCart .panel_shopCart {
+    width: 100%;
+  }
+  .historyComp {
+    flex-direction: column;
+  }
+  .historyComp img {
+    width: 400px;
+    height: 200px;
+    margin: 40px;
+    border: solid 10px rgb(183, 199, 38);
+  }
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  header {
+    width: 100%;
+  }
+  header nav .panel_header .company_logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .shopCart_logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+  }
+  header nav .panel_header .menu_header li a {
+    font-size: 0.8rem;
+  }
+  .frame_video {
+    width: 100%;
+    height: 25rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+  .frame_video iframe {
+    width: 80%;
+  }
+  .sign_txt {
+    font-size: 0.8rem;
+  }
+  .exhibitor {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+  }
+  footer .panel_footer {
+    font-size: 1.2rem;
+  }
+  footer .panel_footer h6 {
+    margin-bottom: 1rem;
+  }
+  footer .panel_footer .social_media a img {
+    width: 30px;
+    height: 30px;
+  }
+  .grid_shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid_shop .shop_item {
+    width: 300px;
+    height: 300px;
+  }
+  .grid_shop .shop_item img {
+    width: 70%;
+    height: 50%;
+  }
+  .grid_shop .cardtwo img {
+    width: 50%;
+  }
+  .grid_shop .cardfour {
+    grid-area: cardfour;
+  }
+  .grid_shop .cardfour img {
+    margin-bottom: 0rem;
+  }
+  .box_sConsulta {
+    flex-direction: column-reverse !important;
+    justify-content: space-evenly;
+    align-content: normal;
+    margin-top: 200px;
+    margin-bottom: 250px;
+  }
+  .box_sConsulta .panel_sConsulta {
+    font-size: 0.8rem;
+    margin-top: 50px;
+    padding: 0px;
+    width: 10rem;
+  }
+  .box_sConsulta .panel_sConsulta #comentsService {
+    width: 19rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

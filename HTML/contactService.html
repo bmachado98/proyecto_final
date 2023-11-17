@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <meta name="author" content="Bryan Machado Peralta">
+    <title>Contacto - Labielaloca</title>
+    <link rel="page icon" href="https://cdn-icons-png.flaticon.com/512/2673/2673544.png">
+
+    <body>
+        <!--NAVbAR--> 
+        <nav class="panel_header">
+            <!--Enlace para el inicio de la pagina-->
+            <a href="../index.html">
+                <!--imagen para el enlace-->
+                <picture>
+                <img class="company_logo" src="https://cdn-icons-png.flaticon.com/512/2673/2673544.png" alt="Bikeshop Logo" width="50" height="50"  title="Bikeshop Logo">
+                </picture>
+            </a>
+            <!--titulo de la pagina-->
+            <h1>
+                Bikeshop Labielaloca
+            </h1>
+            <!--Enlace para el carrito de compra-->
+            <a href="shop.html">
+                <!--imagen para el enlace-->
+                <picture>
+                    <img class="shopCart_logo" src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png" alt="Logo carrito de compra." width="40" height="40">
+                </picture>
+            </a>
+            <!--Menu de desplazamiento-->
+            <ul class="menu_header">
+                <li>
+                    <a href="contactService.html">Servicio de reparacion</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html">Acerca de nosotros</a>
+                </li>
+            </ul>
+
+        </nav>
+    
+        <div class="sign_txt">
+            <h2>
+            Ingresa tu consulta y te estaremos respondiendo en cuanto podamos.
+            </h2>
+        </div>
+        
+        <section class="box_sConsulta">
+           
+            <div class="panel_sConsulta">
+                <form action="form.php" method="post">
+                    <div>
+                        <label class="labelScoment" for="">Nombre y apellido:</label>
+                        <input type="text" name="nameP" id="nombreid" placeholder="Pepe Guerra">
+                    </div>
+                
+                    <div>
+                        <label class="labelScoment" for="">Numero de celular:</label>
+                        <input type="text" name="numPhone" id="nombreid" placeholder="099 888 777">
+                    </div>
+
+                    <div>
+                        <label class="labelScoment" for="">Correo:</label>
+                        <input type="text" name="msger" id="nombreid" placeholder="Correo@msn.com">
+                    </div>
+                    
+                    <div>
+                        <label class="labelScoment" for="">Localidad:</label>
+                        <select name="localSite" id="localSite">
+                            <option value="">Montevideo</option>
+                            <option value="">Canelones</option>
+                            <option value="">Artigas</option>
+                            <option value="">San Jose</option>
+                            <option value="">Argentina</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <p class="labelScoment">Comentarios:</p>
+                        <textarea name="coments" id="comentsService" cols="70" rows="10"></textarea>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox"> 
+                            Quiero recibir el newsletter
+                        <input type="submit" value="enviar">
+                    </div>
+
+                </form>
+            </div>
+            
+            <div class="frame_img_meca">
+                <img src="../ASSETS/mecanica-920x593.jpg" alt="foto taller" width="400px" height="200px">
+            </div>
+
+        </section>
+        <!--FOOTER-->
+        <footer class="page_footer">
+        
+            <div class="panel_footer">Seguinos en nuestras redes sociales
+        
+                <h6> Todos los derechos no fueron reservados</h6>
+        
+                <div class="social_media">
+                    
+                    <a class="social_media_link" href="https://www.facebook.com" target="_blank">
+                        <img src="../ASSETS/facebook.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="social_media_link" href="https://api.whatsapp.com/send?text=Hola%2C%20en%20qu%C3%A9%20podemos%20ayudarte?%20%20%21" target="_blank">
+                        <img src="../ASSETS/whatsapp.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="social_media_link" href="https://www.youtube.com" target="_blank">
+                        <img src="../ASSETS/youtube.png" alt="" width="50" height="50">
+                    </a> 
+                    <a class="social_media_link" href="https://www.tiktok.com" target="_blank">
+                        <img src="../ASSETS/tik-tok.png" alt="" width="50" height="50">
+                    </a>
+                    <a class="social_media_link" href="https://www.instagram.com" target="_blank">
+                        <img src="../ASSETS/instagram.png" alt="" width="50" height="50">
+                    </a>
+                   
+                </div>
+        
+            </div>
+        </footer>
+
+
+    </body>
+</html>

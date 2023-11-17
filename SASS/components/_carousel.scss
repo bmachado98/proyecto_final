@@ -1,0 +1,15 @@
+#carouselExampleAutoplaying{
+    
+    .carousel-inner{
+        height: 30rem !important;
+        z-index: -1;
+
+        img{
+            height: 30rem !important;
+        }
+    }
+    button{
+        z-index: -1;
+    }
+
+}

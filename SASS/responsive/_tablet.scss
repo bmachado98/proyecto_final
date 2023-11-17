@@ -1,0 +1,108 @@
+//tablet responsive
+@media (min-width: 769px) and (max-width: 960px){
+
+    header{
+        width: 100%;
+        nav{
+            .panel_header{
+
+                .company_logo{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 0.5rem;
+                }
+                .shopCart_logo{
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 0.5rem;
+                }
+                .menu_header{
+                    li{
+                        a{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .frame_video{
+        width: 100%;
+        height: 25rem;
+        margin: 2rem 0rem 0rem 0rem;
+        iframe{
+            width: 80%;
+        }
+    }
+    .sign_txt{
+        font-size: 0.8rem;
+    }
+    .exhibitor{
+        grid-template-columns: repeat(3,180px);
+        grid-template-rows: repeat(3,180px);
+    }
+
+    footer{
+
+        .panel_footer{
+            font-size: 1.2rem;
+
+            h6{
+                margin-bottom: 1rem;
+            }
+            .social_media{
+                a{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+        }   }
+    }
+
+    .grid_shop{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .shop_item{
+            width: 300px;
+            height: 300px;
+            img{
+                width: 70%;
+                height: 50%;
+            }
+        }
+        .cardtwo{
+            img{
+                width: 50%;
+            }
+        }
+        .cardfour{
+            grid-area: cardfour;
+            img{
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    .box_sConsulta{
+        flex-direction: column-reverse !important;
+        justify-content: space-evenly;
+        align-content: normal;
+        margin-top: 200px;
+        margin-bottom: 250px;
+
+        .panel_sConsulta{
+            font-size: 0.8rem;
+            margin-top: 50px;
+            padding: 0px;
+            width: 10rem;
+
+            #comentsService{
+                width: 19rem;
+            }
+        }
+
+    }
+}

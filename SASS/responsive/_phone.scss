@@ -1,0 +1,151 @@
+//phone responsive
+@media (max-width: 768px) {
+
+    header{
+        width: 100%;
+        nav{
+            .panel_header{
+                .company_logo{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 0.5rem;
+                }
+                .shopCart_logo{
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 0.5rem;
+                }
+                .menu_header{
+                    li{
+                        a{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .brands_asoc{
+        .lista_marcas{
+            img{
+                height: 20px;
+                width: 200px;
+            }
+            .scott_flayer{
+                width: 80px;
+                height: 30px;
+            }
+        }
+    }
+    #carouselExampleAutoplaying{
+        margin-bottom: 5rem;
+        height: 200px;
+
+        .carousel-inner{
+            height: 200px !important;
+            z-index: -1;
+    
+            img{
+                height: 200px !important;
+            }
+        }
+    }
+    .frame_video{
+        width: 100%;
+        height: 15rem;
+        margin: 2rem 0rem 0rem 0rem;
+        iframe{
+            width: 80%;
+        }
+    }
+    .sign_txt{
+        font-size: 0.8rem;
+        margin: 80px 0px 80px 0px;
+    }
+    .exhibitor{
+        grid-template-columns: repeat(3,120px);
+        grid-template-rows: repeat(3,120px);
+    }
+
+    footer{
+
+        .panel_footer{
+            font-size: 1.2rem;
+
+            h6{
+                margin-bottom: 1rem;
+            }
+            .social_media{
+                a{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+        }   }
+    }
+
+    .grid_shop{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .shop_item{
+            width: 300px;
+            height: 300px;
+            img{
+                width: 70%;
+                height: 50%;
+            }
+        }
+        .cardtwo{
+            img{
+                width: 50%;
+            }
+        }
+        .cardfour{
+            grid-area: cardfour;
+            img{
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    .box_sConsulta{
+        flex-direction: column-reverse !important;
+        justify-content: space-evenly;
+        align-content: normal;
+        margin-top: 200px;
+        margin-bottom: 250px;
+
+        .panel_sConsulta{
+            width: 100%;
+            font-size: 0.8rem;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            #comentsService{
+                width: 19rem;
+            }
+        }
+    }
+    .box_shopCart{
+        flex-direction: column;
+        .panel_shopCart{
+            width: 100%;
+
+        }
+    }
+    .historyComp{
+        flex-direction: column;
+    
+        img{
+            width: 400px;
+            height: 200px;
+            margin: 40px;
+            border: solid 10px $coloruno;
+            
+        }
+
+    }
+}

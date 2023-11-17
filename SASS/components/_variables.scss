@@ -1,0 +1,16 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@500&display=swap');
+
+$coloruno: rgb(183, 199, 38);
+$colordos: rgb(109, 78, 194);
+@mixin txt_shadow {
+    color: black;
+    text-shadow: 0px 1px 2px black;
+    font-weight: bold;
+    text-decoration: none;
+}
+span{
+    color: $coloruno;
+    text-shadow: 0px 0px 1px 1px black;
+    font-weight: bold;
+}

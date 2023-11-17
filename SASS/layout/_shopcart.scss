@@ -1,0 +1,37 @@
+.panel_shopCart{
+    background-image: radial-gradient(ellipse 80rem 50rem, rgb(109, 78, 194), black);
+    box-shadow: 0px 0px 4px 4px #7ccf17;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 5rem 0rem 10rem 26rem;
+    margin-bottom: 10rem;
+    border-radius: 12px;
+    border: solid 2px #7ccf17;
+
+    h3{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: gold;
+        text-shadow: 0px 0px 10px 7px black;
+        border-radius: 12px;
+        height: 15px;
+    }
+    .content_shopCart{
+        background-image: linear-gradient(to bottom, #7ccf17, #334d14);
+        width: 30rem;
+        height: 10rem;
+        border-radius: 12px;
+        box-shadow: 0px 0px 4px 2px black;
+        border-radius: 12px;
+        border: solid 2px rgb(34, 17, 81);
+
+        p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-shadow: 0px 0px 4px 2px black;
+            border-radius: 12px;
+            border: solid 2px rgb(109, 78, 194);
+        }
+    }
+}
